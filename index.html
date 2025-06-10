@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Product Viewer</title>
+  <link rel="stylesheet" href="./src/style.css" />
+
+  <!-- Import map to resolve bare module specifiers -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.1/build/three.module.js",
+      "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.160.1/examples/jsm/controls/OrbitControls.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Canvas for Three.js renderer -->
+  <canvas id="viewerCanvas"></canvas>
+
+  <!-- Main JavaScript module -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
